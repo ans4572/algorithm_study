@@ -27,3 +27,9 @@
 - https://programmers.co.kr/learn/courses/30/lessons/60060
 - https://www.acmicpc.net/problem/1655
 - https://www.acmicpc.net/problem/11049
+
+# 6주차
+- https://www.codetree.ai/frequent-problems/tail-catch-play/description
+- https://www.codetree.ai/frequent-problems/cube-rounding/description
+- https://www.codetree.ai/frequent-problems/odd-chess/description
+- https://www.codetree.ai/frequent-problems/max-sum-of-tetris-block/description
