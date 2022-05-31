@@ -17,8 +17,8 @@ int board[9][9];
 vector<pair<int, int>> vec;  // 말의 좌표 저장 배열
 bool visit[9][9];            // 방문 저장
 int ans = 100;
-int dn[4] = { 1, -1, 0, 0 };
-int dm[4] = { 0, 0, 1, -1 };
+int dn[4] = { -1, 0, 1, 0 };
+int dm[4] = { 0, 1, 0, -1 };
 
 // 종류에 따른 이동 방향
 vector<vector<int>> piece = {
@@ -33,6 +33,7 @@ vector<vector<int>> piece = {
 // 한 방향으로 쭉 이동시키는 함수
 // (n,m): 좌표 / d: 방향
 void move(int n, int m, int d) {
+
 	visit[n][m] = true;
 
 	int nn = n + dn[d];
@@ -40,15 +41,14 @@ void move(int n, int m, int d) {
 
 	while (true) {
 		// 범위 벗어난 경우
-		if (nn < 0 || nn >= N || mm > 0 || mm >= M)
+		if (nn < 0 || nn >= N || mm < 0 || mm >= M)
+			break;
+		// 상대방 체스 만난 경우
+		if (board[nn][mm] == 6)
 			break;
 
 		visit[nn][mm] = true;
 
-		// 상대방 체스 만난 경우
-		if (board[nn][mm] == 6) 
-			break;
-		
 		nn += dn[d];
 		mm += dm[d];
 	}
@@ -56,26 +56,28 @@ void move(int n, int m, int d) {
 	return;
 }
 
-void chess(int idx, vector<int> &dir) {
+void chess(int idx, vector<int>& dir) {
 	if (idx == vec.size()) {
 
 		memset(visit, false, sizeof(visit));
 
 		for (int i = 0; i < vec.size(); ++i) {
-			int n = vec[i].first;
-			int m = vec[i].second;
+
+			int go[4] = { 0 };
 
 			// 말의 앞 방향에 따른 이동할 수 있는 격자 범위 정하면서 이동
 			for (int d = 0; d < 4; ++d) {
-				go[d + dir] = piece[board[n][m]][(d + dir[i]) % 4];
+				go[(d + dir[i]) % 4] = piece[board[vec[i].first][vec[i].second]][d];
+				if (go[(d + dir[i]) % 4]) {
+					move(vec[i].first, vec[i].second, (d + dir[i]) % 4);
+				}
 			}
-
 		}
 
 		int count = 0;
 		for (int i = 0; i < N; ++i) {
 			for (int j = 0; j < M; ++j) {
-				if(!visit[i][j]) count++;
+				if (!visit[i][j] && board[i][j] != 6) count++;
 			}
 		}
 
@@ -99,8 +101,8 @@ int main() {
 		for (int j = 0; j < M; ++j) {
 			cin >> board[i][j];
 
-			if (board[i][j] > 0 && board[i][j] != 6) 
-				vec.push_back(make_pair(i,j));
+			if (board[i][j] > 0 && board[i][j] != 6)
+				vec.push_back(make_pair(i, j));
 		}
 	}
 
