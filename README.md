@@ -33,3 +33,9 @@
 - https://www.codetree.ai/frequent-problems/cube-rounding/description
 - https://www.codetree.ai/frequent-problems/odd-chess/description
 - https://www.codetree.ai/frequent-problems/max-sum-of-tetris-block/description
+
+# 7주차
+- https://www.acmicpc.net/problem/2662
+- https://www.acmicpc.net/problem/2887
+- https://www.acmicpc.net/problem/1167
+- https://www.acmicpc.net/problem/1654
