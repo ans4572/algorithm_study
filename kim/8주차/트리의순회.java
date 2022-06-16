@@ -10,6 +10,11 @@ public class Main {
 	static int[] in, post, pre;
 	static int n;
 	static int pos; // pre 순서대로 저장될 값
+	
+	
+	// 인오더 : 8 4 9 2 5 1 6 3 7
+	// 포스트 : 8 9 4 5 2 6 7 3 1 
+	
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
