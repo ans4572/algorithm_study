@@ -39,3 +39,15 @@
 - https://www.acmicpc.net/problem/2887
 - https://www.acmicpc.net/problem/1167
 - https://www.acmicpc.net/problem/1654
+
+# 8주차
+- https://www.acmicpc.net/problem/1725
+- https://www.acmicpc.net/problem/1922
+- https://www.acmicpc.net/problem/2252
+- https://www.acmicpc.net/problem/2263
+
+# 9주차
+- https://www.acmicpc.net/problem/2042
+- https://www.acmicpc.net/problem/14002
+- https://www.acmicpc.net/problem/1958
+- https://www.acmicpc.net/problem/1005
