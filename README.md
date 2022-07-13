@@ -63,3 +63,8 @@
 - https://www.acmicpc.net/problem/2186
 - https://www.acmicpc.net/problem/17404
 - https://www.acmicpc.net/problem/2023
+
+# 12주차
+- https://www.acmicpc.net/problem/3665
+- https://www.acmicpc.net/problem/9655
+- https://school.programmers.co.kr/learn/courses/30/lessons/17685
