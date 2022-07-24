@@ -68,3 +68,9 @@
 - https://www.acmicpc.net/problem/3665
 - https://www.acmicpc.net/problem/9655
 - https://school.programmers.co.kr/learn/courses/30/lessons/17685
+
+# 13주차
+- https://www.acmicpc.net/problem/9252
+- https://www.acmicpc.net/problem/16953
+- https://www.acmicpc.net/problem/7682
+- https://www.acmicpc.net/problem/4386
