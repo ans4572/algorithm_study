@@ -74,3 +74,9 @@
 - https://www.acmicpc.net/problem/16953
 - https://www.acmicpc.net/problem/7682
 - https://www.acmicpc.net/problem/4386
+
+# 14주차
+- https://www.acmicpc.net/problem/14725
+- https://www.acmicpc.net/problem/1949
+- https://www.acmicpc.net/problem/14890
+- https://www.acmicpc.net/problem/7579
